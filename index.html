@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<p id="inicio"></p>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SolarSur</title>
+        <meta name="description" content="SolarSur ofrece soluciones en energía solar como termas solares, sistemas de calentamiento y mantenimiento especializado. Ahorra energía y cuida el medio ambiente con tecnología confiable y eficiente." />
+        <meta name="google-site-verification" content="kXajHhrviBWRqvPcTuFwpROarfuHqAlWJUJGq3pLIH4" />
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta property="og:title" content="SolarSur">
+        <meta property="og:description" content="Expertos en termas solares, paneles, mantenimiento y más.">
+        <meta property="og:image" content="https://www.solarsur.site/Recurso 2.svg">
+        <meta property="og:url" content="https://www.solarsur.site">
+        <meta property="og:type" content="website">
+
+                <!--llamar al archivo donde se agregaran los estilos-->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+
+
+<!-- Modal de confirmación de envío -->
+<div id="modal-confirmacion" style="display:none;">
+  <div class="modal-fondo">
+    <div class="modal-contenido">
+      <button id="modal-cerrar-x" class="modal-cerrar-x" aria-label="Cerrar">&times;</button>
+      <p class="modal-mensaje">¡Mensaje enviado<br>correctamente!</p>
+    </div>
+  </div>
+</div>
+
+
+<!--confirmacion de envio--> 
+<script src="confirmacion.js"></script>
+<!--Abrir video--> 
+<script src="abrir_video.js"></script>
+
+
+
+
+
+
+  <body>
+    
+  
+<header>
+
+  <!-- 
+=====================
+        LOGO
+=====================
+-->
+            <a href="index.html" class="logo_link"> 
+                <h1 class="logo"><img src="Recurso 2.svg" alt="" class="tamaño-logo"></h1>
+            </a>
+
+
+<!--CAMBIO DE LOGO AL HACER SCROLL-->            
+<script src="cambio_logo.js"></script>
+
+<!--Zoom pantallas-->            
+<script src="zoom_pantallas.js"></script>
+
+
+
+        
+
+
+
+<!-- 
+=======================
+BOTONES DEL FORMULARIO
+EN DISPOSITIVO MÓVIL 
+======================= 
+-->
+
+    <div class="hamburguesa">
+        <div class="contenedor_menu">
+            <div class="menu_linea" onclick="toggleMenu()">
+                <div class="opcion"></div>
+                <div class="opcion"></div>
+                <div class="opcion"></div>
+            </div>
+        </div>
+        <div id="efecto_menu" class="efecto_menu">
+            <!-- Botones del formulario -->
+            <div class="menu-buttons">
+                <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+                <a href="#informacion" onclick="toggleMenu()">Nosotros</a>
+                <a href="#productos" onclick="toggleMenu()">Productos</a>
+                <a href="#beneficios" onclick="toggleMenu()">Beneficios</a>
+                <a href="#contacto-formulario" onclick="toggleMenu()">Contacto</a>
+            </div>
+        </div>
+
+        <script src="efecto_menu.js"></script>
+    </div>
+
+
+
+
+
+
+<!-- 
+=======================
+BOTONES DEL FORMULARIO 
+======================= 
+-->
+
+
+<form action="post" class="formulario" style="margin-right: 15.8vw;">
+  <button formaction="#inicio">INICIO</button>
+  <button formaction="#informacion">NOSOTROS</button>
+  <button formaction="#productos">PRODUCTOS</button>
+  <button formaction="#beneficios">BENEFICIOS</button>
+  <button formaction="#contacto-formulario">CONTACTANOS</button>
+
+<a href="https://www.facebook.com/share/18xE3tDNQ9/" target="_blank" class="icon-wrapper" style="margin-left: 11.8vw;">
+  <img class="icon normal facebook" src="facebook.svg"style="margin-top: 23px; ; " alt="facebook"/>
+  <img class="icon hover facebook" src="facebook-hover.svg"style="margin-top: 23px; " alt="facebook hover" />
+</a>
+
+<a href="https://www.instagram.com/solarsurperu/" target="_blank" class="icon-wrapper">
+  <img class="icon normal instagram" style="margin-top: 23px;" src="instagram.svg" alt="instagram" />
+  <img class="icon hover instagram" style="margin-top: 23px;" src="instagram-hover.svg" alt="instagram hover" />
+</a>
+
+<a href="https://www.tiktok.com/@solarsur" target="_blank" class="icon-wrapper">
+  <img class="icon normal tiktok" style="margin-top: 23px;" src="logo-tiktok.svg" alt="tiktok" />
+  <img class="icon hover tiktok" style="margin-top: 23px;" src="tiktok-hover.svg" alt="tiktok hover" />
+</a>
+
+
+</form>
+
+
+
+<style>
+.item {
+  margin-left: 10px; /* Agrega un margen izquierdo de 10 píxeles */
+}
+
+.formulario{
+  margin-bottom: 9px;
+  justify-content: center;  
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* separa los íconos */
+}
+
+.icon-wrapper .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.icon-wrapper .hover {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.icon-wrapper:hover .hover {
+  opacity: 1;
+}
+
+.icon-wrapper:hover .normal {
+  opacity: 0;
+}
+
+</style>
+
+
+<!-- 
+===================================
+IMAGEN INICIAL DE LOS ICONOS
+E IMAGEN DE CAMBIO AL HACER SCROLL 
+===================================
+-->
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const threshold = 445;
+  const icons = {
+    facebook: {
+      normal: ['facebook.svg', 'facebook 2.svg'],
+      hover: ['facebook-hover.svg', 'facebook 2-hover.svg']
+    },
+    instagram: {
+      normal: ['instagram.svg', 'instagram 2.svg'],
+      hover: ['instagram-hover.svg', 'instagram 2-hover.svg']
+    },
+    tiktok: {
+      normal: ['logo-tiktok.svg', 'tik-tok.svg'],
+      hover: ['tiktok-hover.svg', 'tik-tok-hover.svg']
+    }
+  };
+
+  function actualizarImagenes(segundoSet) {
+    Object.keys(icons).forEach(key => {
+      const normal = document.querySelector(`.icon.normal.${key}`);
+      const hover = document.querySelector(`.icon.hover.${key}`);
+      normal.src = icons[key].normal[segundoSet ? 1 : 0];
+      hover.src = icons[key].hover[segundoSet ? 1 : 0];
+    });
+  }
+
+  window.addEventListener('scroll', () => {
+    actualizarImagenes(window.scrollY >= threshold);
+  });
+});
+</script>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- 
+==========================================
+CAMBIO DE COLOR DEL HEADER AL HACER SCROLL
+==========================================
+-->
+
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) { // Cambia el valor según cuándo quieras que se active
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('header'); // Reemplaza 'header' con el selector correcto de tu encabezado
+  const scrollThreshold = 445; // Define la cantidad de píxeles para el cambio de color
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= scrollThreshold) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- 
+=================================
+CAMBIO DE COLOR DE TEXTO
+EN EL FORMULARIO AL HACER SCROLL
+================================= 
+-->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const formElement = document.querySelector('.formulario');
+  const scrollThreshold = 445;
+  const scrolledTextColor = '#fff'; // Color blanco
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= scrollThreshold) {
+      // Cambia el color de los labels dentro del formulario
+      const labels = formElement.querySelectorAll('label');
+      labels.forEach(label => {
+        label.style.color = scrolledTextColor;
+      });
+
+      // Cambia el color del texto dentro de los inputs (puedes necesitar ajustar el selector)
+      const inputs = formElement.querySelectorAll('input[type="text"], input[type="email"], textarea');
+      inputs.forEach(input => {
+        input.style.color = scrolledTextColor;
+      });
+
+      // Cambia el color del texto del botón (si aplica)
+      const buttons = formElement.querySelectorAll('button');
+      buttons.forEach(button => {
+        button.style.color = scrolledTextColor;
+      });
+    } else {
+      // Restaura el color original de los elementos (esto puede ser más complejo si no se conoce el color inicial)
+      // Una forma más robusta sería agregar/remover una clase en lugar de manipular estilos directamente.
+      const labels = formElement.querySelectorAll('label');
+      labels.forEach(label => {
+        label.style.color = ''; // Restablece al color definido en CSS
+      });
+
+      const inputs = formElement.querySelectorAll('input[type="text"], input[type="email"], textarea');
+      inputs.forEach(input => {
+        input.style.color = '';
+      });
+
+      const buttons = formElement.querySelectorAll('button');
+      buttons.forEach(button => {
+        button.style.color = '';
+      });
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const formElement = document.querySelector('.formulario');
+  const scrollThreshold = 445;
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY >= scrollThreshold) {
+      formElement.classList.add('formulario-texto-blanco');
+    } else {
+      formElement.classList.remove('formulario-texto-blanco');
+    }
+  });
+});
+</script>
+
+<!-- 
+=====================================
+ESTILOS PARA CAMBIO DE COLOR DE TEXTO
+EN EL FORMULARIO AL HACER SCROLL
+===================================== 
+-->
+<style>
+.formulario label,
+.formulario input,
+.formulario textarea,
+.formulario button {
+  /* Tus estilos de color de texto iniciales */
+  color: #333; /* Ejemplo de color de texto inicial */
+}
+
+.formulario.formulario-texto-blanco label,
+.formulario.formulario-texto-blanco input,
+.formulario.formulario-texto-blanco textarea,
+.formulario.formulario-texto-blanco button {
+  color: #fff; /* Color blanco al hacer scroll */
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+
+ <!-- 
+=====================
+  BANNER PRINCIPAL
+======================
+--> 
+
+<div class="imagen_body" style="margin-top: 96px; position: relative; overflow: hidden;">
+  <div class="carrusel-imagen-body">
+
+    <!-- 
+=======================
+PRIMER BANNER PRINCIPAL 
+======================= 
+-->
+    <div class="slide-imagen-body activa">
+      <img class="segundo-fondo" src="banner web.png" alt="" draggable="false">
+      <img class="segundo-fondo-vertical" src="Fondo Principal vertical.png" alt="" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;" draggable="false">
+
+      <div class="contenedor-flex-cotizacion-horario">
+        <div class="recuadro-cotizacion">
+          <div class="recuadro-cabecera">
+            <span class="recuadro-titulo">INVIERTA EN</span>
+            <span class="recuadro-icono">
+              <img src="icono energy.svg" alt="icono"  />
+            </span>
+          </div>
+          <h2 class="recuadro-subtitulo">
+            <span class="naranja">ENERGÍA SOLAR</span><br>
+            <span class="naranja">REDUCIRA SU</span><br>
+            <span class="naranja">CUENTA DE LUZ</span>
+          </h2>
+          <p class="recuadro-descripcion">
+            Paneles y termas ideales para su domicilio, hotel o campo de agricultura.
+          </p>
+            <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp" style="margin-top: 0 !important; z-index: 1;">
+              COTICE AHORA<img src="whatsapp.png" alt="Icono de WhatsApp">
+            </a>
+          <div class="recuadro-imagenes-boton">
+            <div class="recuadro-imagen-izq">
+              <img src="imagen izquierda.png" alt="izquierda" />
+            </div>
+            <div class="recuadro-imagen-der">
+              <img src="imagen derecha.png" alt="derecha" />
+            </div>
+          </div>
+        </div>
+        <div class="horarios-container">
+          <div class="horario-pill">
+              <span class="horario-day">LUNES A VIERNES</span>
+              <span class="horario-time">8:30H a 18:30H</span>
+          </div>
+
+          <div class="horario-pill">
+              <span class="horario-day">SABADOS</span>
+              <span class="horario-time">8:30H a 13:30H</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- 
+=======================
+SEGUNDO BANNER PRINCIPAL
+======================= 
+-->
+
+
+      <div class="slide-imagen-body">
+        <img class="segundo-fondo" src="Segundo Banner principal.jpg" alt="" draggable="false" style="z-index: -1000;">
+        <img class="segundo-fondo-vertical" src="Fondo Principal vertical.png" alt="" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;" draggable="false">
+
+        <div class="Segundo-banner">
+          <div class="recuadro-2">
+            <div class="recuadro-cabecera-2">
+              <span class="recuadro-titulo">CUIDE SU EQUIPO</span>
+              <span class="recuadro-icono-2">
+                <img src="icono energy.svg" alt="icono" style="width: 36px !important; height: 36px !important;"/>
+              </span>
+            </div>
+            <h2 class="recuadro-subtitulo">
+              <span class="naranja">CUIDA TU</span><br>
+              <span class="naranja">TERMA SOLAR</span><br>
+              <span class="naranja">¡Ahorra ya!</span>
+            </h2>
+            <p class="recuadro-descripcion">
+              Paneles y termas ideales para su domicilio, hotel o campo de agricultura.
+            </p>
+              <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp" style="margin-top: 0 !important; z-index: 1;">
+                COTICE AHORA<img src="whatsapp.png" alt="Icono de WhatsApp">
+              </a>
+
+          </div>
+                          <!-- Este es el "botón" (puede ser <button> o <div>) -->
+                <div id="abrir-video" class="recuadro-mantenimiento">
+                  <img src="play.png" alt="" style="justify-content: center; justify-self: center; display: flex; align-items: center; width: 20px; height: 20px; bottom: 0; margin-top: 36px;">
+                  <p>¡Haz <span class="mantenimiento-resaltado">CLICK</span> para ver el<span class="mantenimiento-resaltado"> MANTENIMIENTO</span>!</p>
+                </div>
+
+
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- 
+=======================
+VIDEO DE MANTENIMIENTO
+======================= 
+-->
+
+      <!-- MODAL que contiene ambos videos -->
+      <div id="video-modal" class="video-modal">
+        <div class="video-contenedor">
+          <span class="cerrar-video">✖</span>
+
+          <!-- Video para escritorio (YouTube) -->
+          <iframe id="video-escritorio"
+                  src="https://www.youtube.com/embed/rZ30yNLPEyQ?si=8RR2WJy4_4iTmgd7"
+                  frameborder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                  allowfullscreen></iframe>
+
+          <!-- Video para móvil (TikTok) -->
+          <div id="video-movil" style="display: none;">
+            <blockquote class="tiktok-embed"
+                        cite="https://www.tiktok.com/@solarsur/video/7512491884267310343"
+                        data-video-id="7512491884267310343"
+                        style="max-width: 605px; min-width: 325px;">
+              <section>
+                <a target="_blank" title="@solarsur" href="https://www.tiktok.com/@solarsur?refer=embed">@solarsur</a>
+                🔧 ¿Tu terma solar no calienta bien? Mira cómo reparamos una de placa plana y vuelve a disfrutar de agua caliente todo el invierno.
+              </section>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- TikTok embed script -->
+      <script async src="https://www.tiktok.com/embed.js"></script>
+
+
+
+
+
+
+
+
+<!-- 
+===================
+RECUADRO DE IMAGEN
+===================
+-->
+
+<style>
+@media screen and (max-width: 900px) {
+
+/*que la imagen ocupe todo en ancho de la pantalla */
+.contenedor-imagen{
+  width: 100%;
+  }
+  
+} 
+</style>
+
+
+
+
+
+
+<!-- 
+====================================
+ANIMACIONES DEL CARRUSEL DE IMÁGENES
+ANIMACIONES DE APARICION DE RECUADROS
+ANIMACIONES DE CARACTERÍSTICAS
+====================================
+-->
+
+<script src="carrusel.js"></script>
+
+
+
+<!-- 
+============================
+DIVISION DE BLOQUE PRINCIPAL
+============================
+-->
+
+<div class="bloque_texto" style="  position: static;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+">
+
+<!-- 
+==================
+SECCIÓN CON FONDO
+==================
+-->
+
+<div class="seccion-con-fondo" style="top: 0;">
+
+<!-- 
+==========================
+SECCIÓN DE CARACTERÍSTICAS
+==========================
+-->
+    <div id="caracteristicas" class="caracteristicas">
+
+        <div class="caracteristicas-container">
+            <div class="caracteristica">
+                <img src="Layer 1.svg" alt=""><i class="numero">3</i>
+                <p class="descripcion"></p>
+                <h3>Tres años<br>de garantía</h3>
+            </div>
+            
+            <div class="caracteristica">
+                <img src="Layer 2.svg" alt=""><i class="numero">3</i>
+                <p class="descripcion"></p>
+                <h3>Seguimientos<br>de equipo</h3>
+                
+            </div>
+            <div class="caracteristica">
+                <img src="experiencia.jpg" alt=""><i class="numero">30</i>               
+                <p class="descripcion"></p>
+                <h3>Treinta años <br> de experiencia</h3>
+                
+            </div>
+            <div class="caracteristica">
+                <img src="Layer 3.svg" alt=""><i class="numero">500</i>                
+                <p class="descripcion"></p>
+                <h3>Número de<br>instalaciones</h3>
+                
+            </div>
+        </div>
+
+<!-- 
+=======================
+ANIMACIÓN DE CONTADORES
+======================= 
+-->
+
+<script src="animacion_contador.js"></script>
+
+
+    </div>
+
+
+
+
+
+
+<!-- 
+==================================
+ANIMACIONES DE APARICIÓN AL SCROLL
+==================================
+-->
+
+<script src="animacion_scroll.js"></script>
+
+
+
+
+
+<!-- 
+============================
+INFORMACIÓN SOBRE LA EMPRESA
+============================
+-->
+
+    <div id="informacion" class="informacion">
+      <div class="texto-informacion">
+    <div class="icono-titulo">
+      <img src="icono energy.svg" alt="">
+      <p class="texto-productos">Nosotros</p>
+    </div>
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa de Tacna especializada en soluciones con energía solar. Contamos con amplia experiencia en tecnologías limpias para el ahorro energético en hogares, negocios y zonas rurales.
+        <br><br>
+        Ofrecemos productos como termas solares, paneles fotovoltaicos, sistemas de bombeo solar y arquitectura bioclimática, ayudando a reducir el consumo eléctrico y proteger el medio ambiente.
+        <br><br>
+        Nuestras termas solares permiten un ahorro de hasta el 80% en el consumo de energía para calentar agua, con alta durabilidad y eficiencia comprobada.</p>
+      </div>
+        <div class="imagen">
+        <img src="mas_informacion.jpg" alt="Información adicional" style="width: 604px; height: 474px; border-radius: 18px;">
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+<br id="productos">
+
+<!-- 
+======================
+BLOQUE DE COMPLEMENTO
+======================
+-->
+
+<div class="bloque-complemento">
+  <div class="texto">
+    <h2>Lo que <span  style="color: rgb(1, 1, 112);">realmente</span> <span style="color: rgb(1, 1, 112);">necesitas</span> en invierno</h2>
+    <p>¡Para de pagar tanto en la cuenta de luz! Aprovecha los rayos del sol para obtener agua caliente</p>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- 
+======================
+SECCIÓN DE PRODUCTOS
+======================
+-->
+
+<section id="productos" class="terma" style="min-width: 1200px; background-color: #ffffff; padding: 0px 0px; margin-top: 20px; margin-bottom: 20px; max-width: 100%;">
+  
+<!-- 
+==========================
+ ANIMACIÓN RUEDA DE FONDO
+==========================
+-->
+
+  <div class="animacion-contenedor" style="
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 300px;
+  height: 300px;
+  ">
+    <div class="animacion" id="miAnimacion" style="
+      width: 300px; /* Ancho original de la animación */
+      height: 300px; /* Alto original de la animación */
+      transform: translateX(-50%); /* Desplaza la animación para mostrar la mitad derecha */
+    ">
+      <style>
+        .animacion {
+          z-index: -1;
+
+        }
+        
+      </style>
+      
+    </div>
+    <!-- Círculo animar gris a la derecha -->
+
+<!-- 
+================================
+ANIMACIÓN RUEDA DE FONDO DERECHA
+================================
+-->
+
+  </div>
+      <div class="animacion-contenedor-derecha" style="
+      position: absolute;
+      right: 0;
+      top: 20%;
+      width: 300px;
+      height: 300px;
+      margin-top: 400px;
+    ">
+      <div class="animacion" id="miAnimacion2" style="
+        width: 300px;
+        height: 300px;
+        transform: translateX(50%);
+      ">
+      </div>
+    </div>
+
+
+<!-- 
+==================================
+IMAGEN CON TEXTO Y CARACTERÍSTICAS
+==================================
+-->
+  <div class="imagen-con-texto" style="justify-content: center; margin-top: 100px;">
+      
+ <div class="texto-al-lado">
+  <section class="productos-para-movil" style="display: flex; justify-content: center; ">
+    <div class="imagen-contenedor">
+      <img src="terma.svg" alt="Termas solares" style="max-width: 600px; height: 600px;">
+    </div>
+    <section>
+    <div class="div-2">
+    <div class="icono-titulo">
+      <img src="icono energy.svg" alt="">
+      <p class="texto-productos">Nuestros productos</p>
+    </div>
+      <h2>Termas solares</h2>
+      <p style="font-size: 0.9em; color: #555;">Las termas solares son una alternativa eficiente y ecológica para calentar agua utilizando la energía del sol. Este sistema permite reducir significativamente el consumo de gas o electricidad, lo que se traduce en ahorro económico y un menor impacto ambiental.</p>
+    </div>
+        <div class="caracteristicas-container2" style="margin-top: 100px;">
+            <div class="caracteristica2">
+                <img src="Layer 1.svg" alt=""><i class="numero">3</i>
+                <p class="descripcion"></p>
+                <h3>Tres años<br>de garantía</h3>
+            </div>
+            
+            <div class="caracteristica2">
+                <img src="acero.jpg" alt="">
+                <p class="descripcion2"></p>
+                <h3>Acero<br>inoxidable</h3>
+                
+            </div>
+            <div class="caracteristica2">
+                <img src="experiencia.jpg" alt=""><i class="numero">30</i>               
+                <p class="descripcion2"></p>
+                <h3>Treinta años <br> de experiencia</h3>
+            </div>
+        </div>
+    <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp2">
+      <img src="whatsapp.png" alt="Icono de WhatsApp">Contáctanos
+    </a>
+  
+
+
+
+<!-- 
+==========================
+TERMAS Y ESPACIO NECESARIO
+==========================
+-->
+
+<div class="bloque-invisible" style="margin-top: 30px; overflow-y: auto; position: relative; max-height: calc(3 * (61px + 10px)); ">
+  <div class="contenedor-animacion">
+    <div class="invisible original" style="border: 1px solid #ddd; padding: 10px;border-radius: 15px;">
+      <h4 style="font-size: 1em; margin-bottom: 5px;">Terma de 120L</h4>
+      <div style="display: flex; justify-content: space-between; font-size: 0.8em; color: #555;">
+        <p>Personas: 4</p>
+        <p>Espacio necesario: 1,10m x 2.00m</p>
+      </div>
+    </div>
+    <div class="invisible original" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 15px;">
+      <h4 style="font-size: 1em; margin-bottom: 5px;">Terma de 150L</h4>
+      <div style="display: flex; justify-content: space-between; font-size: 0.8em; color: #555;">
+        <p>Personas: 5</p>
+        <p>Espacio necesario: 1.30m x 2.00m</p>
+      </div>
+    </div>
+    <div class="invisible original" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 15px;">
+      <h4 style="font-size: 1em; margin-bottom: 5px;">Terma de 180L</h4>
+      <div style="display: flex; justify-content: space-between; font-size: 0.8em; color: #555;">
+        <p>Personas: 6</p>
+        <p>Espacio necesario: 1.60m x 2.00m</p>
+      </div>
+    </div>
+    <div class="invisible original" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 15px;">
+      <h4 style="font-size: 1em; margin-bottom: 5px;">Terma de 240L</h4>
+      <div style="display: flex; justify-content: space-between; font-size: 0.8em; color: #555;">
+        <p>Personas: 8</p>
+        <p>Espacio necesario: 2.10m x 2.00m</p>
+      </div>
+    </div>
+    <div class="invisible original" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 15px;">
+      <h4 style="font-size: 1em; margin-bottom: 5px;">Terma de 300L</h4>
+      <div style="display: flex; justify-content: space-between; font-size: 0.8em; color: #555;">
+        <p>Personas: 10</p>
+        <p>Espacio necesario: 2.60m x 2.00m</p>
+      </div>
+    </div>
+    <div class="invisible original" style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 15px;">
+      <h4 style="font-size: 1em; margin-bottom: 5px;">Terma de 500L</h4>
+      <div style="display: flex; justify-content: space-between; font-size: 0.8em; color: #555;">
+        <p>Personas: 15</p>
+        <p>Espacio necesario: 4.00m x 2.00m</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</section>
+
+<!-- 
+===========================
+    ANIMACIÓN VERTICAL
+===========================
+-->
+<script src="animacion_vertical.js"></script>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- 
+=======================
+  ANIMACION DE RUEDA
+=======================
+-->
+
+<script>
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('miAnimacion'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'circulo animar.json'
+  });
+</script>
+
+<!-- 
+==========================
+ANIMACION DE RUEDA DERECHA
+==========================
+-->
+
+<script>
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('miAnimacion2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'circulo animar gris.json'
+  });
+</script>
+
+<!-- 
+=====================
+ESTILOS DE ANIMACIÓN
+=====================
+-->
+
+<style>
+  .terma {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Necesario para posicionar la animación absolutamente */
+    justify-content: center;
+  }
+
+  .animacion-contenedor {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    overflow: hidden;
+    height: 150px;
+  }
+
+  .imagen-con-texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1;
+    margin-left: 75px; /* Ajusta el margen al ancho visible de la animación */
+  }
+
+  .imagen-contenedor img {
+    max-width: 350px;
+    height: auto;
+    z-index: 1;
+  }
+  .terma {
+
+  padding-left: 0;
+  margin-left: 0;
+}
+
+body {
+  margin: 0;
+}
+  .texto-al-lado {
+    max-width: 600px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: left;
+  }
+</style>
+
+
+
+
+<br><br>
+
+<!-- 
+======================
+BLOQUE DE COMPLEMENTO
+======================
+-->
+
+<div class="bloque-complemento">
+  <div class="texto">
+    <h2>Energía<span style="color: rgb(1, 1, 112);"> de día</span> y luz <span style="color: rgb(1, 1, 112);">de <br>noche</span></h2>
+    <p>¡Para de pagar tanto en la cuenta de luz! Aprovecha los rayos de sol para producir energía.</p>
+  </div>
+
+</div>
+
+<!-- 
+==========================
+SECCIÓN DE PANELES SOLARES
+==========================
+-->
+
+<section class="seccion-paneles-solares">
+  <div class="carrusel-paneles">
+    <div class="slide-panel activa" >
+      <div class="info-paneles">
+        <div class="icono-titulo">
+          <img src="icono energy.svg" alt="">
+          <p class="texto-productos">Nuestros productos</p>
+        </div>
+        <h2 class="titulo-paneles">Paneles Solares</h2>
+        <p class="descripcion-paneles">Los paneles solares se han convertido en una solución eficiente y sostenible para generar energía limpia. Su instalación permite reducir el consumo eléctrico proveniente de la red y contribuir al cuidado del medio ambiente.</p>
+        <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp">
+          <img src="whatsapp.png" alt="Icono de WhatsApp">Contáctanos
+        </a>
+      </div>
+      <div class="imagen-paneles-container">
+        <img class="imagen-paneles-muy-grande" src="PANEL2.webp" alt="">
+      </div>
+    </div>
+    <div class="slide-panel">
+      <div class="info-paneles">
+        <div class="icono-titulo">
+          <img src="icono energy.svg" alt="">
+          <p class="texto-productos">Nuestros productos</p>
+        </div> 
+        <h2 class="titulo-paneles" style="line-height: 1.1;">Calentador de <br> Piscinas</h2>
+        <p class="descripcion-paneles">Los calentadores solares de piscinas usan energía solar para mantener el agua a buena temperatura todo el año, sin consumir electricidad ni gas, ayudando a ahorrar y cuidar el medio ambiente.</p>
+        <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp">
+          <img src="whatsapp.png" alt="Icono de WhatsApp">Contáctanos
+        </a>
+      </div>
+      <div class="imagen-paneles-container">
+        <img class="imagen-paneles-muy-grande" src="calentador de piscinas.jpg" alt="">
+      </div>
+    </div>
+    <div class="slide-panel">
+      <div class="info-paneles">
+        <div class="icono-titulo">
+          <img src="icono energy.svg" alt="">
+          <p class="texto-productos">Nuestros productos</p>
+        </div>
+        <h2 class="titulo-paneles">Cocina Solar</h2>
+        <p class="descripcion-paneles">Las cocinas solares son una forma ecológica y económica de cocinar, ideal en zonas con abundante sol y acceso limitado a otras fuentes de energía. A pesar de algunas limitaciones, ofrecen ventajas que las hacen una opción viable para muchas personas.</p>
+        <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp">
+          <img src="whatsapp.png" alt="Icono de WhatsApp">Contáctanos
+        </a>
+      </div>
+      <div class="imagen-paneles-container">
+        <img class="imagen-paneles-muy-grande" src="cocina solar.jpg" alt="">
+      </div>
+    </div>
+    <div class="slide-panel">
+      <div class="info-paneles">
+        <div class="icono-titulo">
+          <img src="icono energy.svg" alt="">
+          <p class="texto-productos">Linterna Solar</p>
+        </div>
+        <h2 class="titulo-paneles">Linterna Solar</h2>
+        <p class="descripcion-paneles">Las linternas solares son una alternativa práctica y sostenible, perfectas para zonas sin acceso constante a electricidad. Se recargan con la luz del sol y ofrecen una fuente de iluminación confiable y ecológica.</p>
+        <a href="https://wa.me/51908823893" target="_blank" class="boton-whatsapp">
+          <img src="whatsapp.png" alt="Icono de WhatsApp">Contáctanos
+        </a>
+      </div>
+      <div class="imagen-paneles-container">
+        <img class="imagen-paneles-muy-grande" src="linterna solar.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="puntos-carrusel">
+    <span class="punto-carrusel activo"></span>
+    <span class="punto-carrusel"></span>
+    <span class="punto-carrusel"></span>
+    <span class="punto-carrusel"></span>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+=======================
+  SCRIPT DEL CARRUSEL
+=======================
+-->
+<script src="carrusel2.js"></script>
+
+
+<!-- 
+=======================
+  ANIMACIÓN AL SCROLL
+=======================
+-->
+
+<style>
+  /* Por defecto (para móviles y escritorio): visibles */
+.titulo-seccion,
+.contenedor-pasos {
+  opacity: 1;
+  transition: none;
+}
+
+/* Solo en escritorio: efecto de aparición */
+@media (min-width: 769px) {
+  .titulo-seccion,
+  .contenedor-pasos {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+
+  .aparecer {
+    opacity: 1;
+  }
+}
+</style>
+
+<!-- 
+=================================
+  SCRIPT DE ANIMACIÓN AL SCROLL
+=================================
+-->
+
+<script>
+  function esDispositivoMovil() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 769;
+  }
+
+  if (!esDispositivoMovil()) {
+    function aparecerAlScroll() {
+      const elementos = document.querySelectorAll('.texto-informacion, .imagen, .titulo-seccion, .contenedor-pasos');
+      elementos.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const altoVentana = window.innerHeight;
+
+        if (rect.top < altoVentana - 100) {
+          el.classList.add('aparecer');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', aparecerAlScroll);
+    window.addEventListener('load', aparecerAlScroll);
+  }
+</script>
+
+
+
+
+
+
+
+<!-- 
+==================================
+  PROCESO FOTOVOLTAICO COMPLETO
+==================================
+-->
+
+<section class="proceso-fotovoltaico-completo">
+  <div class="titulo-seccion">
+    <h2>¿Cómo se desarrolla un proyecto Fotovoltaico?</h2>
+  </div>
+  <div class="contenedor-pasos">
+    <div class="paso">
+      <div class="icono-contenedor">
+        <img src="icono proyecto1.svg" alt="">
+      </div>
+      <div class="descripcion-contenedor">
+        <h3>1. Análisis del consumo eléctrico</h3>
+        <p>Revisar recibo de luz para conocer el consumo.</p>
+      </div>
+    </div>
+
+    <div class="paso">
+      <div class="icono-contenedor">
+        <img src="icono proyecto2.svg" alt="">
+      </div>
+      <div class="descripcion-contenedor">
+        <h3>2. Identificación de la demanda energética</h3>
+        <p>Revisar recibo de luz para conocer el consumo.</p>
+      </div>
+    </div>
+
+    <div class="paso">
+      <div class="icono-contenedor">
+        <img src="icono proyecto3.svg" alt="">
+      </div>
+      <div class="descripcion-contenedor">
+        <h3>3. Dimensionamiento del sistema</h3>
+        <p>Calcular número de paneles y equipos necesarios.</p>
+      </div>
+    </div>
+
+    <div class="paso">
+      <div class="icono-contenedor">
+        <img src="icono proyecto4.svg" alt="">
+      </div>
+      <div class="descripcion-contenedor">
+        <h3>4. Evaluación del espacio disponible</h3>
+        <p>Verificar espacio disponible y definir la mejor ubicación para los paneles.</p>
+      </div>
+    </div>
+
+    <div class="paso">
+      <div class="icono-contenedor">
+        <img src="icono proyecto5.svg" alt="">
+      </div>
+      <div id="beneficios" class="descripcion-contenedor">
+        <h3>5. Ejecución del proyecto</h3>
+        <p>Realizar la instalación según el diseño y conexión del sistema.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- 
+=============================
+SCRIPT DE ANIMACIÓN AL SCROLL
+=============================
+-->
+
+<script>
+  function esDispositivoMovil() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 769;
+  }
+
+  if (!esDispositivoMovil()) {
+    function aparecerAlScroll() {
+      const elementos = document.querySelectorAll(
+        '.texto-informacion, .imagen, .titulo-seccion, .contenedor-pasos, .contenedor-beneficios, .card-beneficio, .card-beneficio1'
+      );
+      
+      elementos.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const altoVentana = window.innerHeight;
+
+        if (rect.top < altoVentana - 100) {
+          el.classList.add('aparecer');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', aparecerAlScroll);
+    window.addEventListener('load', aparecerAlScroll);
+  }
+</script>
+
+
+
+
+
+
+<!-- 
+=====================
+  BENEFICIOS DE LOS 
+  PANELES SOLARES
+=====================
+-->
+
+<section class="beneficios-paneles-solares">
+  <div class="contenedor-beneficios">
+    <div class="icono-titulo">
+      <img src="icono energy.svg" alt="">
+      <p class="titulo-beneficio">Beneficios</p>
+    </div>
+    <h3 class="subtitulo-beneficios">Cambios que notará al tener un panel o terma solar</h3>
+    <p class="descripcion-beneficios">Tener un panel o terma solar trae consigo múltiples beneficios, tanto económicos como ambientales. Se destaca el ahorro en el consumo de energía, la reducción de la huella de carbono y la contribución a un futuro más sostenible. Además, la energía solar es una fuente renovable y gratuita, lo que garantiza su disponibilidad a largo plazo. </p>
+    <div class="contenedor-cards">
+      <div class="card-beneficio">
+        <div class="texto-beneficio"><div class="numero-beneficio">1</div><p style="margin-left: 33px; font-size: 11pt;">Independencia energética</p></div>
+        <img src="beneficio 1.svg" alt="Beneficio 1" class="imagen-beneficio" style="height: 100%;">
+      </div>
+      <div class="card-beneficio1">
+        <div class="texto-beneficio"><div class="numero-beneficio">2</div><p style="margin-left: 33px; font-size: 11pt;">Recupera rápido tu inversión</p></div>
+        <img src="beneficio 2.svg" alt="Beneficio 2" class="imagen-beneficio" style="height: 100%;">
+      </div>
+      <div class="card-beneficio">
+        <div class="texto-beneficio"><div class="numero-beneficio">3</div><p style="margin-left: 33px; font-size: 11pt;">Ahorro en la factura energética</p></div>
+        <img src="beneficio 3.svg" alt="Beneficio 3" class="imagen-beneficio" style="height: 100%;">
+      </div>
+      <div class="card-beneficio1">
+        <div class="texto-beneficio"><div class="numero-beneficio">4</div><p style="margin-left: 33px; font-size: 11pt;">Protección contra subidas de tarifas</p></div>
+        <img src="beneficio 4.svg" alt="Beneficio 4" class="imagen-beneficio" style="height: 100%;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 
+======================
+BLOQUE DE COMPLEMENTO
+======================
+-->
+
+<div class="bloque-complemento">
+  <div class="texto">
+    <h2>Invierte de forma <br><span style="color: rgb(1, 1, 112);">inteligente</span> con nosotros</h2>
+    <p>¡Para de pagar tanto en la cuenta de luz! Aprovecha los rayos de sol para producir energía.</p>
+  </div>
+
+</div>
+
+
+
+<!-- 
+=======================
+FORMULARIO DE CONTACTO
+=======================
+-->
+
+
+    <section class="contenedor-formulario" id="contacto-formulario">
+        <div class="imagen-formulario">
+            <img src="imagen_formulario.webp" alt="Trabajador de construcción"> 
+        </div>
+        <div class="bloque-formulario-general" >
+            <h1>¿Tienes alguna pregunta <br>para nosotros?</h1>
+            <form id="bloqueFormulario" action="https://formsubmit.co/solarsurperu1@gmail.com" method="post" >
+              <input type="hidden" name="_next" value="https://solarsur.site?enviado=1">
+                <div class="datos-personales form-row"><div class="nombres form-group" > <label for="nombre"></label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required >
+                    </div>
+                    <div class="apellidos form-group"> <label for="apellido"></label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    </div>
+                </div>
+                <div class="contato-formulario form-row"> <div class="correo form-group"> <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" placeholder="tuCorreoAquí@gmail.com" required>
+                    </div>
+                    <div class="telefono form-group"> <label for="numero">Número</label>
+                        <input type="tel" id="numero" name="numero" placeholder="+51 999 999 999" pattern="[0-9]{9}" title="Ingrese un número de teléfono válido de 9 dígitos" required>
+                    </div>
+                </div>
+                <div class="seleccion-asunto form-group"> <label for="asunto">Asunto</label>
+                    <div class="seleccion custom-select"> <select id="asunto" name="asunto" required>
+                            <option value="mantenimiento">Mantenimiento</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mensajes">
+                  <label for="mensaje">Mensaje</label>
+                    <div class="textarea-wrapper"> <textarea id="mensaje" name="mensaje" placeholder="Buenos días..." rows="5" class="no-resizable" maxlength="365"></textarea>
+                      <div id="contador-caracteres">
+                        <span id="actual">0</span> / <span id="maximo">365</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="segundo-contacto form-group"> <label for="contacto_preferencia">Contacto de preferencia</label>
+                    <div class="seleccion custom-select"> <select id="contacto_preferencia" name="contacto_preferencia">
+                            <option value="telefono">Teléfono</option>
+                            <option value="email">Email</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="aceptar-politicas">
+                    <input type="checkbox" id="acepta_politicas" name="acepta_politicas" required>
+                    <label for="acepta_politicas">Acepta las políticas de privacidad</label>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar</button>
+
+            </form>
+        </div>
+    </section>
+
+<!-- 
+=================================
+SCRIPT DEL CONTADOR DE CARACTERES
+=================================
+-->
+
+<script>
+    const textarea = document.getElementById('mensaje');
+    const contadorActual = document.getElementById('actual');
+    const contadorMaximo = document.getElementById('maximo');
+    const maxLength = textarea.getAttribute('maxlength');
+
+    // Inicializar el contador máximo
+    contadorMaximo.textContent = maxLength;
+
+    textarea.addEventListener('input', () => {
+        const currentLength = textarea.value.length;
+        contadorActual.textContent = currentLength;
+
+        if (currentLength >= maxLength) {
+            contadorActual.style.color = 'red';
+        } else {
+            contadorActual.style.color = '#888'; // Vuelve al color original
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-- 
+=========================
+  BLOQUE DE COMENTARIOS
+=========================
+-->
+
+<section id="Comentarios" class="bloque-comentarios">
+  <div class="icono-titulo">
+      <img src="icono energy.svg" alt="" style="margin-left: 100px;">
+      <p class="titulo-beneficio">Beneficios</p>
+    </div>
+    <h3 class="subtitulo-beneficios" style="left:0vh; text-align: left; margin-left: 100px; font-size: 30pt; margin-bottom: 50px; color: #001E83;">Cambios que notará al tener un panel o terma solar</h3>
+  <div class="comentarios-fila1">
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Carlos M. Rivas</h1>
+      <p>Muy buena atención. Instalé una terma solar y ahora ahorro bastante en luz.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Lucía Fernández</h1>
+      <p>Compré un calentador solar para mi piscina y funciona excelente. Ideal para el invierno.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Esteban Gutiérrez</h1>
+      <p>El equipo técnico fue puntual y dejó todo funcionando. Mis paneles solares ya están rindiendo.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Natalia Robles</h1>
+      <p>Excelente servicio y asesoría. Me ayudaron a elegir la mejor opción para mi casa.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Javier Aquino</h1>
+      <p>Gracias a los paneles solares, ya no me preocupo por el recibo de luz. ¡Inversión inteligente!</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Roxana del Valle</h1>
+      <p>Muy profesionales. Instalaron mi terma solar en un solo día y quedó perfecta.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Pedro L. Castañeda</h1>
+      <p>Servicio rápido y con garantía. Mi familia está feliz con el agua caliente sin gas.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Vanessa Pinto</h1>
+      <p>Desde que tengo energía solar, mi consumo eléctrico ha bajado muchísimo.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Luis Fernando Chávez</h1>
+      <p>Buena atención, buenos productos. Estoy conforme con la instalación del sistema solar.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Andrea Molina</h1>
+      <p>El calentador solar de piscina es una maravilla. Lo usamos todo el año.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Marcos Aliaga</h1>
+      <p>Buen trato desde la cotización hasta la instalación. Muy recomendable.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Valeria Tello</h1>
+      <p>Me explicaron todo con paciencia y resolvieron mis dudas. Gran equipo.</p>
+    </div>
+  </div>
+</div>
+
+<div class="comentarios-fila2">
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Héctor Palomino</h1>
+      <p>Estoy feliz con la eficiencia de los paneles solares. Funcionan incluso en días nublados.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Sandra Merino</h1>
+      <p>Excelente experiencia. Ahora tengo una fuente de energía limpia en casa.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Bryan Ortega</h1>
+      <p>Todo quedó muy bien instalado. Me siento más independiente energéticamente.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Cinthia Guevara</h1>
+      <p>Compré una terma solar y no me arrepiento. Agua caliente todo el día sin gastar luz.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Renzo Torres</h1>
+      <p>Los técnicos fueron amables y rápidos. El sistema solar quedó perfecto.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Karla Espinoza</h1>
+      <p>Buena opción para ahorrar y cuidar el medio ambiente. Estoy muy satisfecha.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Diego Zúñiga</h1>
+      <p>El calentador solar de piscina fue un acierto. Ya no usamos electricidad para eso.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Pamela Jiménez</h1>
+      <p>Los precios son accesibles y la calidad es excelente. Todo 10/10.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Matías Salazar</h1>
+      <p>Me instalaron paneles en mi casa de campo y funcionan genial. Muy agradecido.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Fiorella Ayala</h1>
+      <p>Gracias a la terma solar, ya no dependo del gas. Estoy feliz con el cambio.</p>
+    </div>
+  </div>
+  <div class="comentario-oscuro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Alonso Rivero</h1>
+      <p>Me recomendaron la empresa y no me arrepiento. Muy buen servicio.</p>
+    </div>
+  </div>
+  <div class="comentario-claro">
+    <img src="perfil.svg" alt="" />
+    <div class="texto-comentario">
+      <h1>Gabriela Ramos</h1>
+      <p>Mi factura de luz bajó desde el primer mes. ¡Vale totalmente la pena!</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+<footer>
+
+<!-- 
+=========================
+BLOQUE DE REDES SOCIALES
+=========================
+-->
+
+    <div class="social-bar" id="footer">
+      <div class="bloque1">
+        <a href="index.html">
+          <img src="logo blanco.svg" alt="Logo Blanco" class="logo-blanco">
+        </a>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com/share/18xE3tDNQ9/" target="_blank">
+            <img id="facebook-icon" class="item" src="facebook 2.svg" alt="facebook"/>
+          </a>
+          <a href="https://www.instagram.com/solarsurperu/" target="_blank">
+            <img id="instagram-icon" class="item" src="instagram 2.svg" alt="instagram"/>
+          </a>
+          <a href="https://www.tiktok.com/@solarsur" target="_blank">
+            <img id="tiktok-icon" class="item" src="tik-tok.svg" alt="tiktok"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="bloque2">
+        <h1>Contactanos en  solarsurperu1@gmail.com</h1><br>
+        <p>Soluciones solares confiables y accesibles para todo tipo de necesidad: residencias, comercios, sistemas rurales y aplicaciones especiales. Trabajamos con equipos certificados, instalación garantizada y soporte técnico especializado.</p> <br>
+<div class="correo-ubicacion">
+  <div class="correo-item">
+    <img src="correo.svg" alt="" style="width:30px; height: 30px;">
+    <p>solarsurperu1@gmail.com</p>
+  </div>
+  <div class="ubicacion-item">
+    <img src="ubicacion.svg" alt="" style="width: 30px; height: 30px;">
+    <p>Calle Arica N°15 - Tacna</p>
+  </div>
+</div>
+      </div>
+
+      <div class="bloque3">
+        <h1>Contáctanos:</h1><br>
+        <a><img src="telefono.png" style="height: 30px; width: 30px;">(052) 243863</a>
+        <a href="https://wa.me/51908823893" target="_blank"><img src="icono whatsapp blanco.svg" alt="" style="height: 30px; width: 30px;">908 823 893</a>
+        <a href="https://wa.me/51952674744" target="_blank"><img src="icono whatsapp blanco.svg" alt="" style="height: 30px; width: 30px;">952 674 744</a>
+        
+      </div>
+    </div>
+<style>
+  .bloque2 p{
+    text-align: left;
+  }
+  
+  .bloque3 a:hover{
+    transform:  scale(1.05);
+    transition: transform 0.2s ease;
+
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+==========================
+    BLOQUE DE CHATBOT
+==========================
+-->
+
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-button">
+            
+            <img src="CHATBOT.svg" alt="Chat"  style="width: 100%;  object-fit: cover;  ">
+        </button>   
+        <div id="chat-container">
+            <div id="chat-messages">
+                <!-- Aquí se mostrarán los mensajes -->
+            </div>
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="En qué te puedo ayudar...">
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="chatbot.js"></script>
+
+</div>
+
+
+</footer>
+
+
+
+</main> 
+</body>
+
+<!-- 
+============================
+    MODAL DE CONFIRMACIÓN
+============================
+-->
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    if (window.location.search.includes('enviado=1')) {
+        document.getElementById('modal-confirmacion').style.display = 'flex';
+    }
+    document.getElementById('btn-aceptar-modal').addEventListener('click', function() {
+        document.getElementById('modal-confirmacion').style.display = 'none';
+        // Limpia el parámetro de la URL al cerrar el modal
+        if (window.history.replaceState) {
+            const url = window.location.origin + window.location.pathname;
+            window.history.replaceState({}, document.title, url);
+        }
+    });
+});
+</script>
+</html>
